@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "EmployeeRevenue",
+    "name": "LocationRevenue",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/m/revenue/employee/{{EmployeeInput1.text}}"
+        "url": "web:4000/m/revenue/location/{{LocationInput1.text}}/start/{{start.formattedDate}}/end/{{end.formattedDate}}"
       },
       "invalids": [],
       "messages": [],
@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Manager1",
+    "pageId": "Managers - Revenue",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -46,14 +46,16 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "EmployeeInput1.text"
+      "LocationInput1.text",
+      "end.formattedDate",
+      "start.formattedDate"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Manager1_EmployeeRevenue",
+  "id": "Managers - Revenue_LocationRevenue",
   "deleted": false,
-  "gitSyncId": "643ec9b0fd2680322d5ee1ad_643ecc06fd2680322d5ee1b8"
+  "gitSyncId": "643ec9b0fd2680322d5ee1ad_643ece38fd2680322d5ee1bb"
 }

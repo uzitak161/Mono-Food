@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Manager1",
+    "pageId": "Managers - Revenue",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -47,7 +47,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Manager1_TotalRevenue",
+  "id": "Managers - Revenue_TotalRevenue",
   "deleted": false,
   "gitSyncId": "643ec9b0fd2680322d5ee1ad_643ed4d6fd2680322d5ee1c1"
 }

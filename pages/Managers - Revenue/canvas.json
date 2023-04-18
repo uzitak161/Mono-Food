@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Manager1",
-    "slug": "manager1",
+    "name": "Managers - Revenue",
+    "slug": "managers-revenue",
     "layouts": [
       {
         "viewMode": false,
@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1170,
+          "bottomRow": 1250,
           "containerStyle": "none",
           "snapRows": 104,
           "parentRowSpace": 1,
@@ -350,7 +350,7 @@
                       "minWidth": 450,
                       "isVisible": true,
                       "datePickerType": "DATE_PICKER",
-                      "label": "Label",
+                      "label": "Start Date",
                       "version": 2,
                       "parentId": "d22teo95it",
                       "labelAlignment": "left",
@@ -408,7 +408,7 @@
                       "minWidth": 450,
                       "isVisible": true,
                       "datePickerType": "DATE_PICKER",
-                      "label": "Label",
+                      "label": "End Date",
                       "version": 2,
                       "parentId": "d22teo95it",
                       "labelAlignment": "left",
@@ -862,8 +862,8 @@
                         "paragraph",
                         "label"
                       ],
-                      "topRow": 24,
-                      "bottomRow": 28,
+                      "topRow": 23,
+                      "bottomRow": 27,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -924,8 +924,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 18,
-                      "bottomRow": 22,
+                      "topRow": 17,
+                      "bottomRow": 21,
                       "parentRowSpace": 10,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
@@ -978,8 +978,8 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 8,
-                      "bottomRow": 16,
+                      "topRow": 7,
+                      "bottomRow": 15,
                       "parentRowSpace": 10,
                       "labelWidth": 5,
                       "autoFocus": false,
@@ -1038,7 +1038,7 @@
                         "label"
                       ],
                       "topRow": 0,
-                      "bottomRow": 5,
+                      "bottomRow": 4,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -1700,7 +1700,7 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Manager1_GetAllEmployees",
+              "id": "Managers - Revenue_GetAllEmployees",
               "name": "GetAllEmployees",
               "confirmBeforeExecute": false,
               "pluginType": "API",
@@ -1710,7 +1710,7 @@
           ],
           [
             {
-              "id": "Manager1_EmployeeRevenue",
+              "id": "Managers - Revenue_EmployeeRevenue",
               "name": "EmployeeRevenue",
               "confirmBeforeExecute": false,
               "pluginType": "API",
@@ -1720,19 +1720,19 @@
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "Manager1_LocationRevenue",
+              "id": "Managers - Revenue_LocationRevenue",
               "name": "LocationRevenue",
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
-                "start.formattedDate",
+                "LocationInput1.text",
                 "end.formattedDate",
-                "LocationInput1.text"
+                "start.formattedDate"
               ],
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "Manager1_TotalRevenue",
+              "id": "Managers - Revenue_TotalRevenue",
               "name": "TotalRevenue",
               "confirmBeforeExecute": false,
               "pluginType": "API",
@@ -1740,13 +1740,13 @@
               "timeoutInMillisecond": 10000
             },
             {
-              "id": "Manager1_TotalRevenueWithTime",
+              "id": "Managers - Revenue_TotalRevenueWithTime",
               "name": "TotalRevenueWithTime",
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
-                "totalStart.formattedDate",
-                "totalEnd.formattedDate"
+                "totalEnd.formattedDate",
+                "totalStart.formattedDate"
               ],
               "timeoutInMillisecond": 10000
             }
@@ -1754,7 +1754,7 @@
         ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "Manager1",
+        "id": "Managers - Revenue",
         "deleted": false,
         "policies": [],
         "userPermissions": []
