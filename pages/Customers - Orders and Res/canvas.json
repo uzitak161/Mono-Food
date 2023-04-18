@@ -29,7 +29,7 @@
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
               "borderColor": "#E0DEDE",
               "iconSVG": "/static/media/icon.5b428de12db9ad6a591955ead07f86e9.svg",
-              "onSubmit": "{{place_order.run(() => showAlert(place_order.data,'success'), () => showAlert('Uh-oh! Something went wrong.'))}}",
+              "onSubmit": "{{(() => {\nplace_order.run();\n\tc_get_order_history.run();\n\t\nshowAlert(place_order.data,'success');\n})()}}",
               "topRow": 58,
               "type": "JSON_FORM_WIDGET",
               "animateLoading": true,
@@ -206,7 +206,7 @@
               },
               "disabledWhenInvalid": true,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "originalBottomRow": 104,
+              "originalBottomRow": 101,
               "useSourceData": false,
               "schema": {
                 "__root_schema__": {
@@ -408,6 +408,9 @@
               "dynamicPropertyPathList": [
                 {
                   "key": "schema.__root_schema__.children.date_of_birth.defaultValue"
+                },
+                {
+                  "key": "onSubmit"
                 }
               ],
               "displayName": "JSON Form",
@@ -601,7 +604,7 @@
                         "label"
                       ],
                       "topRow": 1,
-                      "bottomRow": 5,
+                      "bottomRow": 7,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
@@ -665,8 +668,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 6,
-                      "bottomRow": 10,
+                      "topRow": 8,
+                      "bottomRow": 12,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
@@ -1541,7 +1544,7 @@
                       },
                       "borderRadius": "1.5rem",
                       "columnUpdatedAt": 1681854877199,
-                      "originalBottomRow": 44,
+                      "originalBottomRow": 41,
                       "defaultSelectedRowIndices": [
                         0
                       ],
@@ -1843,7 +1846,7 @@
                       "horizontalAlignment": "LEFT",
                       "isVisibleSearch": true,
                       "responsiveBehavior": "fill",
-                      "originalTopRow": 9,
+                      "originalTopRow": 6,
                       "isVisiblePagination": true,
                       "cellBackground": "#fef2f2",
                       "verticalAlignment": "CENTER"
@@ -1903,7 +1906,7 @@
                       "originalTopRow": 1,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
-                      "originalBottomRow": 9,
+                      "originalBottomRow": 6,
                       "fontSize": "1.875rem",
                       "minDynamicHeight": 4
                     }
@@ -1939,10 +1942,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
-              "originalTopRow": 106,
+              "originalTopRow": 105,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 151,
+              "originalBottomRow": 150,
               "minDynamicHeight": 10
             }
           ]
