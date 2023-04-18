@@ -1,8 +1,20 @@
 {
   "pages": [
     {
-      "id": "Page1",
+      "id": "Customer1",
       "isDefault": true
+    },
+    {
+      "id": "Customer2",
+      "isDefault": false
+    },
+    {
+      "id": "Manager1",
+      "isDefault": false
+    },
+    {
+      "id": "Manager2",
+      "isDefault": false
     }
   ],
   "viewMode": false,
