@@ -1,0 +1,6 @@
+{
+	"employee_id" : 1,
+	"shift_start" : "",
+	"shift_end" : "",
+	"location_id" : ""
+}

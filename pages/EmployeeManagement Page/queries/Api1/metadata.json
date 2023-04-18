@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "AddEmployee",
+    "name": "Api1",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/m/employee"
+        "url": "web:4000/m/schedule"
       },
       "invalids": [],
       "messages": [],
@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Manager1",
+    "pageId": "EmployeeManagement Page",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -29,9 +29,9 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n\t\"first_name\" : {{first_name.inputText}},\n\t\"last_name\" : {{last_name.inputText}},\n\t\"manager_id\" : {{manager_id.inputText}},\n\t\"phone1\" : {{phone1.inputText}},\n}",
+      "body": "{\n\t\"employee_id\" : 1,\n\t\"shift_start\" : \"\",\n\t\"shift_end\" : \"\",\n\t\"location_id\" : \"\"\n}",
       "bodyFormData": [],
-      "httpMethod": "POST",
+      "httpMethod": "PUT",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -43,26 +43,17 @@
       }
     },
     "executeOnLoad": false,
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [
-      "first_name.inputText",
-      "last_name.inputText",
-      "manager_id.inputText",
-      "phone1.inputText"
-    ],
+    "jsonPathKeys": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Manager1_AddEmployee",
+  "id": "EmployeeManagement Page_Api1",
   "deleted": false,
-  "gitSyncId": "643ec9b0fd2680322d5ee1ad_643edd19fd2680322d5ee1ca"
+  "gitSyncId": "643ee41e3a6c2e76fcbd0768_643f207a477cef744d7ec333"
 }

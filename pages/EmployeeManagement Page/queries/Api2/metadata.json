@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "TotalRevenueWithTime",
+    "name": "Api2",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/m/revenue/start/{{totalStart.formattedDate}}/end/{{totalEnd.formattedDate}}"
+        "url": "web:4000/m/schedule"
       },
       "invalids": [],
       "messages": [],
@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Manager1",
+    "pageId": "EmployeeManagement Page",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -36,25 +36,18 @@
         "apiContentType": "none"
       }
     },
-    "executeOnLoad": true,
-    "dynamicBindingPathList": [
-      {
-        "key": "datasourceUrl"
-      }
-    ],
+    "executeOnLoad": false,
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [
-      "totalEnd.formattedDate",
-      "totalStart.formattedDate"
-    ],
+    "jsonPathKeys": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Manager1_TotalRevenueWithTime",
+  "id": "EmployeeManagement Page_Api2",
   "deleted": false,
-  "gitSyncId": "643ee41e3a6c2e76fcbd0768_643ef8fe3a6c2e76fcbd0793"
+  "gitSyncId": "643ee41e3a6c2e76fcbd0768_643f2279477cef744d7ec336"
 }
