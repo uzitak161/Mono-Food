@@ -1,0 +1,5 @@
+{
+	"employee_id" : {{EmploymentID.inputText}},
+	"location_id" : {{EmploymentLocation.inputText}},
+	"wage" : {{CurrencyInput1.value}}
+}

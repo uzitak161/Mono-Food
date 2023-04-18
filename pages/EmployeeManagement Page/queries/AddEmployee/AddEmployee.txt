@@ -1,0 +1,6 @@
+{
+	"first_name" : {{first_name.inputText}},
+	"last_name" : {{last_name.inputText}},
+	"manager_id" : {{manager_id.inputText}},
+	"phone1" : {{phone1.inputText}},
+}

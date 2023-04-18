@@ -2,7 +2,7 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "GetAllEmployees",
+    "name": "GetAllEmployments",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Manager1",
+    "pageId": "EmployeeManagement Page",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -47,7 +47,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Manager1_GetAllEmployees",
+  "id": "EmployeeManagement Page_GetAllEmployments",
   "deleted": false,
-  "gitSyncId": "643ec9b0fd2680322d5ee1ad_643ed925fd2680322d5ee1c6"
+  "gitSyncId": "643ee41e3a6c2e76fcbd0768_643ee4b93a6c2e76fcbd077e"
 }
