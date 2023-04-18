@@ -2,7 +2,7 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "AddEmployee",
+    "name": "FireEmployee",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
@@ -29,9 +29,9 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n\t\"first_name\" : {{first_name.inputText}},\n\t\"last_name\" : {{last_name.inputText}},\n\t\"manager_id\" : {{manager_id.inputText}},\n\t\"phone1\" : {{phone1.inputText}},\n\t\"phone2\" : {{phone2.inputText}}\n}",
+      "body": "{\n\t\"employee_id\" : {{FireEmployeeID.inputText}},\n\t\"location_id\" : {{FireLocationID.inputText}}\n}",
       "bodyFormData": [],
-      "httpMethod": "POST",
+      "httpMethod": "DELETE",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -52,18 +52,15 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "first_name.inputText",
-      "last_name.inputText",
-      "manager_id.inputText",
-      "phone1.inputText",
-      "phone2.inputText"
+      "FireEmployeeID.inputText",
+      "FireLocationID.inputText"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "EmployeeManagement Page_AddEmployee",
+  "id": "EmployeeManagement Page_FireEmployee",
   "deleted": false,
-  "gitSyncId": "643ee41e3a6c2e76fcbd0768_643ee4ab3a6c2e76fcbd077c"
+  "gitSyncId": "643ee41e3a6c2e76fcbd0768_643f16c7477cef744d7ec323"
 }

@@ -1,0 +1,4 @@
+{
+	"employee_id" : {{FireEmployeeID.inputText}},
+	"location_id" : {{FireLocationID.inputText}}
+}

@@ -3,4 +3,5 @@
 	"last_name" : {{last_name.inputText}},
 	"manager_id" : {{manager_id.inputText}},
 	"phone1" : {{phone1.inputText}},
+	"phone2" : {{phone2.inputText}}
 }
