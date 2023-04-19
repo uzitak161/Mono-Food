@@ -15,6 +15,14 @@
     {
       "id": "Managers - Staff and Schedules",
       "isDefault": false
+    },
+    {
+      "id": "Sign in page",
+      "isDefault": false
+    },
+    {
+      "id": "Customer navigation",
+      "isDefault": false
     }
   ],
   "viewMode": false,
