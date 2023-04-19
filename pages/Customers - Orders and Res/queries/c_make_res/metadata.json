@@ -7,7 +7,7 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/c/reservations/{{Sign_in.text}}"
+        "url": "web:4000/c/reservations/{{appsmith.URL.queryParams.customerId}}"
       },
       "invalids": [],
       "messages": [],
@@ -45,17 +45,17 @@
     "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
-        "key": "datasourceUrl"
+        "key": "body"
       },
       {
-        "key": "body"
+        "key": "datasourceUrl"
       }
     ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Sign_in.text",
+      "appsmith.URL.queryParams.customerId",
       "res_form.formData"
     ],
     "userSetOnLoad": false,

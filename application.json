@@ -31,6 +31,10 @@
     {
       "id": "Managers - Menu",
       "isDefault": false
+    },
+    {
+      "id": "Customer - Feedback",
+      "isDefault": false
     }
   ],
   "viewMode": false,

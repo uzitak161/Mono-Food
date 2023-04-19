@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "c_place_order",
+    "name": "c_leave_review",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/c/orders/{{appsmith.URL.queryParams.customerId}}"
+        "url": "web:4000/c/feedback/{{appsmith.URL.queryParams.customerId}}"
       },
       "invalids": [],
       "messages": [],
@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Customers - Orders and Res",
+    "pageId": "Customer - Feedback",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -29,7 +29,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{{new_order_form.formData}}",
+      "body": "{\n\t\"comments\": {{feedback_comments.inputText}},\n\t\"rating\": {{feedback_rating.value}}\n}",
       "bodyFormData": [],
       "httpMethod": "POST",
       "selfReferencingDataPaths": [],
@@ -56,14 +56,15 @@
     "messages": [],
     "jsonPathKeys": [
       "appsmith.URL.queryParams.customerId",
-      "new_order_form.formData"
+      "feedback_comments.inputText",
+      "feedback_rating.value"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Customers - Orders and Res_c_place_order",
+  "id": "Customer - Feedback_c_leave_review",
   "deleted": false,
-  "gitSyncId": "643e157a1da5d15adbba3d1a_643ef65b998a2e64f8c68f78"
+  "gitSyncId": "644007152f4bbf0b14b17c0e_64405ba581060145c2045c7d"
 }
