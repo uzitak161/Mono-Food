@@ -29,7 +29,7 @@
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
               "borderColor": "#E0DEDE",
               "iconSVG": "/static/media/icon.5b428de12db9ad6a591955ead07f86e9.svg",
-              "onSubmit": "{{(() => {\nplace_order.run();\n\tc_get_order_history.run();\n\t\nshowAlert(place_order.data,'success');\n})()}}",
+              "onSubmit": "{{(() => {\nc_place_order.run();\n\tc_get_order_history.run();\n\t\nshowAlert(c_place_order.data,'success');\n})()}}",
               "topRow": 96,
               "type": "JSON_FORM_WIDGET",
               "animateLoading": true,
@@ -232,7 +232,8 @@
                       "label": "Location",
                       "labelTextSize": "0.875rem",
                       "serverSideFiltering": false,
-                      "options": "{{get_locations.data.map(res => (\n{\n\t\"label\" : `${res.city}, ${res.state} ${res.zip_code}`,\n\t\"value\" : res.location_id\n}\n))}}"
+                      "options": "{{c_get_locs.data.map(res => (\n{\n\t\"label\" : `${res.city}, ${res.state} ${res.zip_code}`,\n\t\"value\" : res.location_id\n}\n))}}",
+                      "onOptionChange": ""
                     },
                     "employee_id": {
                       "children": {},
@@ -920,7 +921,7 @@
                       "label": "Location",
                       "labelTextSize": "0.875rem",
                       "serverSideFiltering": false,
-                      "options": "{{get_locations.data.map(res => (\n{\n\t\"label\" : `${res.city}, ${res.state} ${res.zip_code}`,\n\t\"value\" : res.location_id\n}\n))}}"
+                      "options": "{{c_get_locs.data.map(res => (\n{\n\t\"label\" : `${res.city}, ${res.state} ${res.zip_code}`,\n\t\"value\" : res.location_id\n}\n))}}"
                     },
                     "date_of_birth": {
                       "children": {},
@@ -2284,16 +2285,6 @@
               "jsonPathKeys": [
                 "Sign_in.text"
               ],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Customers - Orders and Res_get_locations",
-              "name": "get_locations",
-              "confirmBeforeExecute": false,
-              "pluginType": "API",
-              "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             }
           ]

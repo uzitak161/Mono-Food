@@ -1,0 +1,4 @@
+{
+	"comments": {{feedback_comments.inputText}},
+	"rating": {{feedback_rating.value}}
+}

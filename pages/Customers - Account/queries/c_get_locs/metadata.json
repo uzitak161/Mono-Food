@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Customers - Orders and Res",
+    "pageId": "Customers - Account",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -47,7 +47,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Customers - Orders and Res_c_get_locs",
+  "id": "Customers - Account_c_get_locs",
   "deleted": false,
-  "gitSyncId": "643e0ffc6ae30b79da4301f9_643f299dbef8e21421bc343a"
+  "gitSyncId": "643e0ffc6ae30b79da4301f9_643f4db52b4bde7ff9d4c168"
 }

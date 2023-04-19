@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "place_order",
+    "name": "c_leave_review",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/c/orders/{{Sign_in.inputText}}"
+        "url": "web:4000/c/feedback/{{feedback_custID.inputText}}"
       },
       "invalids": [],
       "messages": [],
@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Customers - Orders and Res",
+    "pageId": "Customers - Account",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -29,7 +29,7 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{{new_order_form.formData}}",
+      "body": "{\n\t\"comments\": {{feedback_comments.inputText}},\n\t\"rating\": {{feedback_rating.value}}\n}",
       "bodyFormData": [],
       "httpMethod": "POST",
       "selfReferencingDataPaths": [],
@@ -45,25 +45,26 @@
     "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
-        "key": "body"
+        "key": "datasourceUrl"
       },
       {
-        "key": "datasourceUrl"
+        "key": "body"
       }
     ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Sign_in.inputText",
-      "new_order_form.formData"
+      "feedback_comments.inputText",
+      "feedback_custID.inputText",
+      "feedback_rating.value"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Customers - Orders and Res_place_order",
+  "id": "Customers - Account_c_leave_review",
   "deleted": false,
-  "gitSyncId": "643e157a1da5d15adbba3d1a_643ef65b998a2e64f8c68f78"
+  "gitSyncId": "643e0ffc6ae30b79da4301f9_643f508b2b4bde7ff9d4c16d"
 }
