@@ -2,7 +2,7 @@
   "pages": [
     {
       "id": "Customers - Account",
-      "isDefault": true
+      "isDefault": false
     },
     {
       "id": "Customers - Orders and Res",
@@ -18,7 +18,7 @@
     },
     {
       "id": "Sign in page",
-      "isDefault": false
+      "isDefault": true
     },
     {
       "id": "Customer navigation",
@@ -26,6 +26,10 @@
     },
     {
       "id": "Customers - Edit Profile",
+      "isDefault": false
+    },
+    {
+      "id": "Managers - Menu",
       "isDefault": false
     }
   ],
