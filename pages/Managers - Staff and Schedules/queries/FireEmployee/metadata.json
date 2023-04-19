@@ -2,12 +2,12 @@
   "pluginType": "API",
   "pluginId": "restapi-plugin",
   "unpublishedAction": {
-    "name": "Api1",
+    "name": "FireEmployee",
     "datasource": {
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin",
       "datasourceConfiguration": {
-        "url": "web:4000/m/schedule"
+        "url": "web:4000/m/employee"
       },
       "invalids": [],
       "messages": [],
@@ -16,7 +16,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "EmployeeManagement Page",
+    "pageId": "Managers - Staff and Schedules",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -29,9 +29,9 @@
       ],
       "encodeParamsToggle": true,
       "queryParameters": [],
-      "body": "{\n\t\"employee_id\" : 1,\n\t\"shift_start\" : \"\",\n\t\"shift_end\" : \"\",\n\t\"location_id\" : \"\"\n}",
+      "body": "{\n\t\"employee_id\" : {{FireEmployeeID.inputText}},\n\t\"location_id\" : {{FireLocationID.inputText}}\n}",
       "bodyFormData": [],
-      "httpMethod": "PUT",
+      "httpMethod": "DELETE",
       "selfReferencingDataPaths": [],
       "pluginSpecifiedTemplates": [
         {
@@ -43,17 +43,24 @@
       }
     },
     "executeOnLoad": false,
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
+    "jsonPathKeys": [
+      "FireEmployeeID.inputText",
+      "FireLocationID.inputText"
+    ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "EmployeeManagement Page_Api1",
+  "id": "Managers - Staff and Schedules_FireEmployee",
   "deleted": false,
-  "gitSyncId": "643ee41e3a6c2e76fcbd0768_643f207a477cef744d7ec333"
+  "gitSyncId": "643ee41e3a6c2e76fcbd0768_643f16c7477cef744d7ec323"
 }

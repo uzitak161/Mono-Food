@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "EmployeeManagement Page",
-    "slug": "employeemanagement-page",
+    "name": "Managers - Staff and Schedules",
+    "slug": "managers-staff-and-schedules",
     "layouts": [
       {
         "viewMode": false,
@@ -2447,7 +2447,7 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "EmployeeManagement Page_GetAllEmployments",
+              "id": "Managers - Staff and Schedules_GetAllEmployments",
               "name": "GetAllEmployments",
               "confirmBeforeExecute": false,
               "pluginType": "API",
@@ -2458,7 +2458,7 @@
         ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "EmployeeManagement Page",
+        "id": "Managers - Staff and Schedules",
         "deleted": false,
         "policies": [],
         "userPermissions": []

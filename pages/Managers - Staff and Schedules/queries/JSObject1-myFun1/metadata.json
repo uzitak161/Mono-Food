@@ -13,8 +13,8 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "EmployeeManagement Page",
-    "collectionId": "EmployeeManagement Page_JSObject1",
+    "pageId": "Managers - Staff and Schedules",
+    "collectionId": "Managers - Staff and Schedules_JSObject1",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -38,7 +38,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "EmployeeManagement Page_JSObject1.myFun1",
+  "id": "Managers - Staff and Schedules_JSObject1.myFun1",
   "deleted": false,
   "gitSyncId": "643ee41e3a6c2e76fcbd0768_643f1d99477cef744d7ec32b"
 }
