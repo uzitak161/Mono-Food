@@ -23,6 +23,10 @@
     {
       "id": "Customer navigation",
       "isDefault": false
+    },
+    {
+      "id": "Customers - Edit Profile",
+      "isDefault": false
     }
   ],
   "viewMode": false,

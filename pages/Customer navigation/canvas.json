@@ -129,6 +129,7 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button1",
+                      "onClick": "{{navigateTo('Customers - Edit Profile',{customerId: appsmith.URL.queryParams.customerId}, 'SAME_WINDOW')}}",
                       "buttonColor": "#60a5fa",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -143,7 +144,11 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 6.0859375,
-                      "dynamicTriggerPathList": [],
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
                       "leftColumn": 40,
                       "dynamicBindingPathList": [
                         {
@@ -441,7 +446,7 @@
               "originalTopRow": 16,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 37,
+              "originalBottomRow": 32,
               "minDynamicHeight": 10
             }
           ]
