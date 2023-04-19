@@ -1725,9 +1725,9 @@
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
+                "locationStart.formattedDate",
                 "LocationInput1.text",
-                "end.formattedDate",
-                "start.formattedDate"
+                "LocationEnd.formattedDate"
               ],
               "timeoutInMillisecond": 10000
             },
