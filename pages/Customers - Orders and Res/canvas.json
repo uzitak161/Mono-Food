@@ -2235,7 +2235,7 @@
                   "cellBackground": "#f3e8ff"
                 }
               },
-              "onRowSelected": "{{showModal('delete_modall')}}",
+              "onRowSelected": "",
               "key": "iexf5wp2lm",
               "canFreezeColumn": true,
               "isDeprecated": false,
