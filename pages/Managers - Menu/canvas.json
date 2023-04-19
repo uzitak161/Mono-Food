@@ -203,7 +203,7 @@
               },
               "disabledWhenInvalid": true,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "originalBottomRow": 140,
+              "originalBottomRow": 148,
               "useSourceData": false,
               "schema": {
                 "__root_schema__": {
@@ -355,7 +355,7 @@
               "bottomRow": 148,
               "fieldLimitExceeded": false,
               "parentRowSpace": 10,
-              "title": "Edit Profile",
+              "title": "Edit Menu Item",
               "hideCard": false,
               "parentColumnSpace": 6.0859375,
               "dynamicTriggerPathList": [

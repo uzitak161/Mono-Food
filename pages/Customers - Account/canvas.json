@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1000,
+          "bottomRow": 1010,
           "containerStyle": "none",
           "snapRows": 124,
           "parentRowSpace": 1,
@@ -31,10 +31,10 @@
               "borderColor": "#18181b",
               "iconSVG": "/static/media/icon.5b428de12db9ad6a591955ead07f86e9.svg",
               "onSubmit": "{{c_signup.run(() => showAlert(c_signup.data,'success'), () => showAlert('Something went wrong!','error'))}}",
-              "topRow": 0,
+              "topRow": 1,
               "type": "JSON_FORM_WIDGET",
               "animateLoading": true,
-              "leftColumn": 7,
+              "leftColumn": 3,
               "dynamicBindingPathList": [
                 {
                   "key": "borderRadius"
@@ -508,7 +508,7 @@
                 }
               ],
               "displayName": "JSON Form",
-              "bottomRow": 100,
+              "bottomRow": 101,
               "fieldLimitExceeded": false,
               "parentRowSpace": 10,
               "title": "Sign Up",
@@ -525,7 +525,7 @@
               "key": "0jqhzw8etl",
               "backgroundColor": "#f4f4f5",
               "isDeprecated": false,
-              "rightColumn": 47,
+              "rightColumn": 43,
               "widgetId": "gaef2o4j98",
               "minWidth": 450,
               "parentId": "0",
