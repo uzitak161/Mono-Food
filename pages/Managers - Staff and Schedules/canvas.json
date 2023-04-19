@@ -99,7 +99,7 @@
               "version": 1,
               "totalRecordsCount": 0,
               "isLoading": false,
-              "onSearchTextChanged": "",
+              "onSearchTextChanged": "{{GetAllEmployments.run()}}",
               "childStylesheet": {
                 "button": {
                   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -928,8 +928,13 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button2",
-                      "onClick": "{{AddEmployee.run(() => showAlert('Added Employee!','success'), () => showAlert(AddEmployee.data,'error'))}}",
+                      "onClick": "{{(() => {\nAddEmployee.run();\n\nGetAllEmployments.run();\n\t\nshowAlert(AddEmployee.data,'success');\n})()}}/",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
                       "searchTags": [
@@ -1229,8 +1234,13 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button2Copy",
-                      "onClick": "{{Add_Employment.run(() => showAlert('\"Successfully Employed Employee ' + EmploymentID.inputText + ' at Location ' + EmploymentLocation.inputText + '\"'), () => {})}}",
+                      "onClick": "{{(() => {\nAdd_Employment.run();\n\nGetAllEmployments.run();\n\t\nshowAlert(Add_Employment.run.data,'success');\n})()}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
                       "searchTags": [
@@ -1639,8 +1649,13 @@
                       "resetFormOnClick": true,
                       "boxShadow": "none",
                       "widgetName": "Button3",
-                      "onClick": "{{FireEmployee.run(() => showAlert('Employee Has Been Fired'), () => {})}}",
+                      "onClick": "{{FireEmployee.run(() => showAlert('Employee Has Been Fired'), () => {})}}\n\n\n{{(() => {\nFireEmployee.run();\n\tGetAllEmployments.run();\n\t\nshowAlert(FireEmployee.data,'success');\n})()}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
                       "searchTags": [
